@@ -1,0 +1,21 @@
+CORRECTNESS_EVAL_ENDPOINT: "databricks:/databricks-gpt-oss-20b"
+SAFETY_EVAL_ENDPOINT: "databricks:/databricks-gpt-oss-20b"
+GUIDELINES_ENDPOINT: "databricks:/databricks-gpt-oss-120b"
+CUSTOM_EVAL_ENDPOINT: "databricks:/databricks-gpt-5-mini"
+
+COHERENT_INSTRUCTIONS: |
+  Evaluate if the response is coherent, maintaining a constant tone
+  and following a clear flow of thoughts/concepts.
+  Question: {{ inputs }}
+  Response: {{ outputs }}
+
+TOOL_USAGE_INSTRUCTIONS: |
+  Analyze the {{ trace }} to verify correct tool usage.
+
+  Check that the agent:
+  - Called tools with correct and reasonable parameters
+  - Used tool outputs effectively to generate the final response
+  - Did not make unnecessary or redundant tool calls
+
+  Return "correct" if tool usage was appropriate and effective,
+  "incorrect" if tools were misused or inappropriate tools were selected.

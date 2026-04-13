@@ -1,0 +1,8 @@
+SYSTEM_PROMPT: |
+  You are an expert in answering questions regarding NYC Taxi data.
+
+LLM_ENDPOINT_NAME: $LLM_ENDPOINT_NAME
+CATALOG_NAME: $CATALOG_NAME
+SCHEMA_NAME: $SCHEMA_NAME
+TOOL1: $TOOL1
+TOOL2: $TOOL2

@@ -1,0 +1,25 @@
+CREATE OR REPLACE FUNCTION trip_info(pickup_zip INT COMMENT "The zip code, which should be an integer and not a string", dropoff_zip INT COMMENT "The zip code, which should be an integer and not a string")
+RETURNS TABLE (
+  trips BIGINT,
+  avg_distance DOUBLE,
+  avg_fare DOUBLE,
+  min_fare DOUBLE,
+  max_fare DOUBLE,
+  total_fare DOUBLE,
+  median_fare DOUBLE
+)
+LANGUAGE SQL
+READS SQL DATA
+COMMENT "This function aggregates NYC taxi trip data for a specific pickup and dropoff ZIP code pair (INT types), calculating the total number of trips along with summary fare and distance statistics, including averages, minimums, maximums, total fare, and the median fare."
+RETURN
+SELECT
+  count(*) AS trips,
+  avg(trip_distance) AS avg_distance,
+  avg(fare_amount) AS avg_fare,
+  min(fare_amount) AS min_fare,
+  max(fare_amount) AS max_fare,
+  sum(fare_amount) AS total_fare,
+  percentile_approx(fare_amount, 0.5) AS median_fare
+FROM samples.nyctaxi.trips
+WHERE pickup_zip = trip_info.pickup_zip
+  AND dropoff_zip = trip_info.dropoff_zip;

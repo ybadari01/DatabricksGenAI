@@ -1,0 +1,39 @@
+[
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "What is the average fare for trips from zip code 10001 to 10002?"
+        }
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "Tool used is trip_info",
+        "Pickup zip code is 10001",
+        "Dropoff zip code is 10002",
+        "Response includes average fare information"
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "How many trips were taken from zip code 10003 to 10004?"
+        }
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "Tool used is trip_info",
+        "Pickup zip code is 10003",
+        "Dropoff zip code is 10004",
+        "Response includes trip count",
+        "Response includes 'Are there any additional questions I can help with?'"
+      ]
+    }
+  }
+]

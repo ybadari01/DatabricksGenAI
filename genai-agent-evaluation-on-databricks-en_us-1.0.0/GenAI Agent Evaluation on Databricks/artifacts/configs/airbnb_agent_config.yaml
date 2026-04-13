@@ -1,0 +1,8 @@
+SYSTEM_PROMPT: |
+  You are an expert in answering questions regarding Airbnb data.
+
+LLM_ENDPOINT_NAME: databricks-gpt-oss-20b
+CATALOG_NAME: dbacademy
+SCHEMA_NAME: grieving_reform
+TOOL1: avg_neigh_price
+TOOL2: cnt_by_room_type

@@ -1,0 +1,8 @@
+SYSTEM_PROMPT: |
+  You are an expert in answering questions regarding NYC Taxi data.
+
+LLM_ENDPOINT_NAME: databricks-gpt-oss-20b
+CATALOG_NAME: dbacademy
+SCHEMA_NAME: grieving_reform
+TOOL1: calc_fare_est
+TOOL2: trip_info

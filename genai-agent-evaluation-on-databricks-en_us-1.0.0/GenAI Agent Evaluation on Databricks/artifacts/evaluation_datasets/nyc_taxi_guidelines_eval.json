@@ -1,0 +1,22 @@
+[
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "What is the average fare for trips from zip code 10001 to 10002?"
+        }
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "The average fare for trips between zip codes 10001 and 10002 is $12.50."
+      ],
+      "guidelines": [
+        "The response should be professional and courteous",
+        "The response should include specific numerical values when providing calculations or statistics",
+        "The response should clearly indicate when it's using NYC taxi data"
+      ]
+    }
+  }
+]

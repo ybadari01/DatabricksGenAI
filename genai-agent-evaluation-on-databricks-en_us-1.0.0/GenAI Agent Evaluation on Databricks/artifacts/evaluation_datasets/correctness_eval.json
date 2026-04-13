@@ -1,0 +1,90 @@
+[
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "How many Entire home/apt listings are in the Mission neighborhood?"
+        }
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "Tool used is cnt_by_room_type",
+        "Neighborhood is Mission",
+        "Room type is Entire home/apt",
+        "Count is <FILL_WITH_INTEGER>"
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "Count the number of Private room listings in Nob Hill."
+        }
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "Tool used is cnt_by_room_type",
+        "Neighborhood is Nob Hill",
+        "Room type is Private room",
+        "Count is 0"
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "What is the average listing price in Haight Ashbury?"
+        }
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "Tool used is avg_neigh_price",
+        "Neighborhood is Haight Ashbury",
+        "Average price is 87.71"
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "What’s the average price in a neighborhood called Middle Earth?"
+        }
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "Tool used is avg_neigh_price",
+        "Neighborhood is Middle Earth",
+        "Average price is null"
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "How many Shared room listings are in Middle Earth?"
+        }
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "Tool used is cnt_by_room_type",
+        "Neighborhood is Middle Earth",
+        "Room type is Shared room",
+        "Count is 0"
+      ]
+    }
+  }
+]

@@ -1,0 +1,12 @@
+CREATE OR REPLACE FUNCTION calc_fare_est(trip_distance DOUBLE COMMENT "The trip distance should be of type DOUBLE", base_fare DOUBLE COMMENT "Base fare should be of type DOUBLE")
+RETURNS DOUBLE
+LANGUAGE SQL
+READS SQL DATA
+NOT DETERMINISTIC
+COMMENT "This SQL function estimates a taxi fare by adding a fixed base fare to a distance-based rate, where the rate is dynamically calculated as the historical average fare per mile from valid NYC taxi trips."
+RETURN base_fare
+     + trip_distance * (
+         SELECT COALESCE(SUM(fare_amount) / NULLIF(SUM(trip_distance), 0), 0.0)
+         FROM samples.nyctaxi.trips
+         WHERE trip_distance > 0 AND fare_amount > 0
+       )

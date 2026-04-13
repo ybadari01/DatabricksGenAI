@@ -1,0 +1,48 @@
+[
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "Can you tell me what the average price is in Mission?"
+        }
+      ]
+    },
+    "outputs": {
+      "output": [
+        "The expected price for listings in this neighborhood is $188.63 per night."
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "The mean price for listings in the Mission neighborhood is $188.63 per night."
+      ],
+      "guidelines": [
+        "The response should have the word 'mean' in its answer."
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "How many rooms in Mission have a private room?"
+        }
+      ]
+    },
+    "outputs": {
+      "output": [
+        "There are 2 private rooms available in Mission."
+      ]
+    },
+    "expectations": {
+      "expected_facts": [
+        "There are 2 private rooms available in the Mission neighborhood."
+      ],
+      "guidelines": [
+        "The response must reiterate that 2 is the number of private rooms and not rooms in general."
+      ]
+    }
+  }
+]

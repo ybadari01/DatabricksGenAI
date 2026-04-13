@@ -1,0 +1,13 @@
+CREATE OR REPLACE FUNCTION cnt_by_room_type(
+neighborhood_name STRING COMMENT "The neighborhood name to filter by",
+room_type_filter STRING COMMENT "The room type to count (e.g., 'Private room' or 'Shared room')"
+)
+RETURNS BIGINT
+LANGUAGE SQL
+DETERMINISTIC
+COMMENT 'Counts the number of Airbnb listings for a specific room type in a given neighborhood. Returns the count as an integer.'
+RETURN
+SELECT COUNT(*)
+FROM sf_airbnb_listings
+WHERE neighbourhood_cleansed = neighborhood_name
+    AND room_type = room_type_filter

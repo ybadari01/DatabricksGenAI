@@ -1,0 +1,32 @@
+[
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "How many Entire home/apt listings are in the Mission neighborhood?"
+        }
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "Count the number of Private room listings in Nob Hill."
+        }
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "What is the average listing price in Haight Ashbury?"
+        }
+      ]
+    }
+  }
+]

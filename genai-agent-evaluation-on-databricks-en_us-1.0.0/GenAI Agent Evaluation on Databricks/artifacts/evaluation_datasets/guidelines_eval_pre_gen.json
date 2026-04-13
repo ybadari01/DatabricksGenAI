@@ -1,0 +1,32 @@
+[
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "Can you tell me what the average price is in Mission?"
+        }
+      ]
+    },
+    "outputs": {
+      "output": [
+        "El precio promedio de los alojamientos en el vecindario Mission es de $188.63 por noche."
+      ]
+    }
+  },
+  {
+    "inputs": {
+      "input": [
+        {
+          "role": "user",
+          "content": "How many rooms in Mission have a private room?"
+        }
+      ]
+    },
+    "outputs": {
+      "output": [
+        "Wow, I'm so glad you asked, man. Let's get into it. There are 2 private rooms available in the Mission neighborhood."
+      ]
+    }
+  }
+]
