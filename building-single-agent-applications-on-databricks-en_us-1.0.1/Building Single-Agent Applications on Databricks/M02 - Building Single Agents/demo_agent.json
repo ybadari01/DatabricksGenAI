@@ -1,0 +1,5 @@
+{
+    "llm_endpoint": "databricks-gpt-oss-120b",
+    "llm_temperature": 0.1,
+    "system_prompt": "You are a helpful assistant. Make sure to use tools for additional functionality."
+}

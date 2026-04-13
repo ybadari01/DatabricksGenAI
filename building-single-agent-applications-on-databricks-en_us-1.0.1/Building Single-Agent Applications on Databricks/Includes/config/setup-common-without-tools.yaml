@@ -1,0 +1,18 @@
+# Classroom-Setup-1.2: Intro to Tool Use
+# Loads Airbnb data only. Tools (avg_neigh_price, airbnb_posting_info) are
+# intentionally NOT created here — students build them during the lab.
+
+medallion_lab: false
+dev_mode: false
+resource_cleanup: false
+
+course_name: "Building Single-Agent Applications on Databricks"
+serverless_compute_version: "5"
+catalog:
+  prefix: "labuser"
+  schema_name: "airbnb_agent"
+
+data:
+  databricks_share_name: "databricks_airbnb_sample_data"   ## Modify if using your own workspace
+  table_name: "sf_airbnb_listings"
+  vocareum_share_name: "airbnb"

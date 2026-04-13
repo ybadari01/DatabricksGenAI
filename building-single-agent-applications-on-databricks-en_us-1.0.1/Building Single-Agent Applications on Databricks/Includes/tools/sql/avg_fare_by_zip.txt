@@ -1,0 +1,12 @@
+CREATE OR REPLACE FUNCTION avg_fare_by_zip(
+    pickup_zip_code INT COMMENT "The pickup ZIP code to filter by"
+)
+RETURNS DOUBLE
+LANGUAGE SQL
+DETERMINISTIC
+COMMENT 'Calculates the average fare amount for trips from a specific pickup ZIP code. Returns the average fare as a numeric value.'
+RETURN
+SELECT AVG(fare_amount)
+FROM samples.nyctaxi.trips
+WHERE pickup_zip = pickup_zip_code
+AND fare_amount IS NOT NULL

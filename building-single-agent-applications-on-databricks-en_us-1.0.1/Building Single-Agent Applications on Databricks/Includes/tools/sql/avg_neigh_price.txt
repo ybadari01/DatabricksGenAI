@@ -1,0 +1,12 @@
+CREATE OR REPLACE FUNCTION avg_neigh_price(
+    neighborhood_name STRING COMMENT "The neighborhood name to filter by (e.g., 'Mission', 'Upper Market')"
+)
+RETURNS DOUBLE
+LANGUAGE SQL
+DETERMINISTIC
+COMMENT 'Calculates the average listing price for a specific neighborhood in San Francisco. Returns the average price as a numeric value.'
+RETURN
+SELECT AVG(price)
+FROM sf_airbnb_listings
+WHERE neighbourhood_cleansed = neighborhood_name
+AND price IS NOT NULL

@@ -1,0 +1,26 @@
+# Classroom-Setup-3.3: Reproducible Agents — Python UC Functions
+# Loads Airbnb data, registers avg_neigh_price (SQL).
+# airbnb_posting_info (Python UC function) is registered at setup time.
+# lab_agent_config.json is written by the notebook after setup.
+
+medallion_lab: false
+dev_mode: false
+resource_cleanup: false
+
+course_name: "Building Single-Agent Applications on Databricks"
+serverless_compute_version: "5"
+
+catalog:
+  prefix: "labuser"
+  schema_name: "airbnb_agent"
+
+data:
+  databricks_share_name: "databricks_airbnb_sample_data"   ## Modify if using your own workspace
+  table_name: "sf_airbnb_listings"
+  vocareum_share_name: "airbnb"
+
+tools:
+  - avg_neigh_price
+
+python_tools:
+  - airbnb_posting_info

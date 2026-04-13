@@ -1,0 +1,13 @@
+CREATE OR REPLACE FUNCTION cnt_lng_dist_trip(
+    pickup_zip_code INT COMMENT "The pickup ZIP code to filter by",
+    min_distance DOUBLE COMMENT "The minimum trip distance in miles"
+)
+RETURNS BIGINT
+LANGUAGE SQL
+DETERMINISTIC
+COMMENT 'Counts the number of trips longer than the specified distance from a given pickup ZIP code. Returns the count as an integer.'
+RETURN
+SELECT COUNT(*)
+FROM samples.nyctaxi.trips
+WHERE pickup_zip = pickup_zip_code
+    AND trip_distance > min_distance
