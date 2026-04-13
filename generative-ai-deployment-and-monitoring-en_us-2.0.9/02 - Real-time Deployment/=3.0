@@ -1,0 +1,368 @@
+Collecting mlflow
+  Obtaining dependency information for mlflow from https://files.pythonhosted.org/packages/52/fe/1ed27f800cd1709a272c6e26b78ec3d77a5ba482171ea1b5bfbcf4c067c0/mlflow-3.4.0-py3-none-any.whl.metadata
+  Using cached mlflow-3.4.0-py3-none-any.whl.metadata (30 kB)
+Requirement already satisfied: databricks-feature-engineering in /databricks/python3/lib/python3.11/site-packages (0.8.0)
+Collecting databricks-feature-engineering
+  Obtaining dependency information for databricks-feature-engineering from https://files.pythonhosted.org/packages/ee/58/d602d9c9869abdb98c4a290d2c0db610786070be7b21024b9d25f3d8de6b/databricks_feature_engineering-0.13.0-py3-none-any.whl.metadata
+  Downloading databricks_feature_engineering-0.13.0-py3-none-any.whl.metadata (4.3 kB)
+Requirement already satisfied: mlflow-skinny==3.4.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow) (3.4.0)
+Collecting mlflow-tracing==3.4.0 (from mlflow)
+  Obtaining dependency information for mlflow-tracing==3.4.0 from https://files.pythonhosted.org/packages/ae/96/403b1191ccf587f19a8c94085477600d6e6b3d61a7aff46f353b20b450f9/mlflow_tracing-3.4.0-py3-none-any.whl.metadata
+  Using cached mlflow_tracing-3.4.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: Flask<4 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (2.2.5)
+Collecting alembic!=1.10.0,<2 (from mlflow)
+  Obtaining dependency information for alembic!=1.10.0,<2 from https://files.pythonhosted.org/packages/39/4a/4c61d4c84cfd9befb6fa08a702535b27b21fff08c946bc2f6139decbf7f7/alembic-1.16.5-py3-none-any.whl.metadata
+  Using cached alembic-1.16.5-py3-none-any.whl.metadata (7.3 kB)
+Collecting cryptography<46,>=43.0.0 (from mlflow)
+  Obtaining dependency information for cryptography<46,>=43.0.0 from https://files.pythonhosted.org/packages/0e/e4/b3e68a4ac363406a56cf7b741eeb80d05284d8c60ee1a55cdc7587e2a553/cryptography-45.0.7-cp311-abi3-manylinux_2_34_x86_64.whl.metadata
+  Using cached cryptography-45.0.7-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+Collecting docker<8,>=4.0.0 (from mlflow)
+  Obtaining dependency information for docker<8,>=4.0.0 from https://files.pythonhosted.org/packages/e3/26/57c6fb270950d476074c087527a558ccb6f4436657314bfb6cdf484114c4/docker-7.1.0-py3-none-any.whl.metadata
+  Using cached docker-7.1.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting fastmcp<3,>=2.0.0 (from mlflow)
+  Obtaining dependency information for fastmcp<3,>=2.0.0 from https://files.pythonhosted.org/packages/96/79/0fd386e61819e205563d4eb15da76564b80dc2edd3c64b46f2706235daec/fastmcp-2.12.3-py3-none-any.whl.metadata
+  Using cached fastmcp-2.12.3-py3-none-any.whl.metadata (17 kB)
+Collecting graphene<4 (from mlflow)
+  Obtaining dependency information for graphene<4 from https://files.pythonhosted.org/packages/66/e0/61d8e98007182e6b2aca7cf65904721fb2e4bce0192272ab9cb6f69d8812/graphene-3.4.3-py2.py3-none-any.whl.metadata
+  Using cached graphene-3.4.3-py2.py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: gunicorn<24 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (20.1.0)
+Requirement already satisfied: matplotlib<4 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (3.7.2)
+Requirement already satisfied: numpy<3 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (1.23.5)
+Requirement already satisfied: pandas<3 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (1.5.3)
+Requirement already satisfied: pyarrow<22,>=4.0.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (14.0.1)
+Requirement already satisfied: scikit-learn<2 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (1.3.0)
+Requirement already satisfied: scipy<2 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (1.11.1)
+Requirement already satisfied: sqlalchemy<3,>=1.4.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow) (1.4.39)
+Requirement already satisfied: cachetools<7,>=5.0.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (5.4.0)
+Requirement already satisfied: click<9,>=7.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (8.0.4)
+Requirement already satisfied: cloudpickle<4 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (2.2.1)
+Requirement already satisfied: databricks-sdk<1,>=0.20.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (0.67.0)
+Requirement already satisfied: fastapi<1 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (0.117.1)
+Requirement already satisfied: gitpython<4,>=3.1.9 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (3.1.27)
+Requirement already satisfied: importlib_metadata!=4.7.0,<9,>=3.7.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (7.1.0)
+Requirement already satisfied: opentelemetry-api<3,>=1.9.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (1.25.0)
+Requirement already satisfied: opentelemetry-proto<3,>=1.9.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (1.27.0)
+Requirement already satisfied: opentelemetry-sdk<3,>=1.9.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (1.25.0)
+Requirement already satisfied: packaging<26 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (23.2)
+Requirement already satisfied: protobuf<7,>=3.12.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (4.24.1)
+Requirement already satisfied: pydantic<3,>=1.10.8 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (2.11.9)
+Requirement already satisfied: python-dotenv<2,>=0.19.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (1.1.1)
+Requirement already satisfied: pyyaml<7,>=5.1 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (6.0)
+Requirement already satisfied: requests<3,>=2.17.3 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (2.31.0)
+Requirement already satisfied: sqlparse<1,>=0.4.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (0.4.2)
+Requirement already satisfied: typing-extensions<5,>=4.0.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (4.15.0)
+Requirement already satisfied: uvicorn<1 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (0.37.0)
+Requirement already satisfied: boto3<2,>=1.16.7 in /databricks/python3/lib/python3.11/site-packages (from databricks-feature-engineering) (1.34.39)
+Requirement already satisfied: dbl-tempo<1,>=0.1.26 in /databricks/python3/lib/python3.11/site-packages (from databricks-feature-engineering) (0.1.26)
+Requirement already satisfied: azure-cosmos==4.3.1 in /databricks/python3/lib/python3.11/site-packages (from databricks-feature-engineering) (4.3.1)
+Collecting protobuf<7,>=3.12.0 (from mlflow-skinny==3.4.0->mlflow)
+  Obtaining dependency information for protobuf<7,>=3.12.0 from https://files.pythonhosted.org/packages/5c/f6/88d77011b605ef979aace37b7703e4eefad066f7e84d935e5a696515c2dd/protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl.metadata
+  Using cached protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting sqlalchemy<3,>=1.4.0 (from mlflow)
+  Obtaining dependency information for sqlalchemy<3,>=1.4.0 from https://files.pythonhosted.org/packages/03/b5/cacf432e6f1fc9d156eca0560ac61d4355d2181e751ba8c0cd9cb232c8c1/sqlalchemy-2.0.43-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata
+  Downloading sqlalchemy-2.0.43-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.6 kB)
+Requirement already satisfied: azure-core<2.0.0,>=1.23.0 in /databricks/python3/lib/python3.11/site-packages (from azure-cosmos==4.3.1->databricks-feature-engineering) (1.30.2)
+Requirement already satisfied: Mako in /databricks/python3/lib/python3.11/site-packages (from alembic!=1.10.0,<2->mlflow) (1.2.0)
+Requirement already satisfied: botocore<1.35.0,>=1.34.39 in /databricks/python3/lib/python3.11/site-packages (from boto3<2,>=1.16.7->databricks-feature-engineering) (1.34.39)
+Requirement already satisfied: jmespath<2.0.0,>=0.7.1 in /databricks/python3/lib/python3.11/site-packages (from boto3<2,>=1.16.7->databricks-feature-engineering) (0.10.0)
+Requirement already satisfied: s3transfer<0.11.0,>=0.10.0 in /databricks/python3/lib/python3.11/site-packages (from boto3<2,>=1.16.7->databricks-feature-engineering) (0.10.2)
+Requirement already satisfied: cffi>=1.14 in /databricks/python3/lib/python3.11/site-packages (from cryptography<46,>=43.0.0->mlflow) (1.15.1)
+Requirement already satisfied: google-auth~=2.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (2.40.3)
+Requirement already satisfied: ipython in /databricks/python3/lib/python3.11/site-packages (from dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (8.15.0)
+Requirement already satisfied: urllib3>=1.26.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from docker<8,>=4.0.0->mlflow) (2.0.7)
+Collecting authlib>=1.5.2 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for authlib>=1.5.2 from https://files.pythonhosted.org/packages/0e/aa/91355b5f539caf1b94f0e66ff1e4ee39373b757fce08204981f7829ede51/authlib-1.6.4-py2.py3-none-any.whl.metadata
+  Using cached authlib-1.6.4-py2.py3-none-any.whl.metadata (9.8 kB)
+Collecting cyclopts>=3.0.0 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for cyclopts>=3.0.0 from https://files.pythonhosted.org/packages/f0/8b/2c95f0645c6f40211896375e6fa51f504b8ccb29c21f6ae661fe87ab044e/cyclopts-3.24.0-py3-none-any.whl.metadata
+  Using cached cyclopts-3.24.0-py3-none-any.whl.metadata (11 kB)
+Collecting exceptiongroup>=1.2.2 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for exceptiongroup>=1.2.2 from https://files.pythonhosted.org/packages/36/f4/c6e662dade71f56cd2f3735141b265c3c79293c109549c1e6933b0651ffc/exceptiongroup-1.3.0-py3-none-any.whl.metadata
+  Using cached exceptiongroup-1.3.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting httpx>=0.28.1 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for httpx>=0.28.1 from https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl.metadata
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting mcp<2.0.0,>=1.12.4 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for mcp<2.0.0,>=1.12.4 from https://files.pythonhosted.org/packages/c9/82/4d0df23d5ff5bb982a59ad597bc7cb9920f2650278ccefb8e0d85c5ce3d4/mcp-1.15.0-py3-none-any.whl.metadata
+  Downloading mcp-1.15.0-py3-none-any.whl.metadata (80 kB)
+[?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/80.4 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m80.4/80.4 kB[0m [31m3.9 MB/s[0m eta [36m0:00:00[0m
+[?25hCollecting openapi-core>=0.19.5 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for openapi-core>=0.19.5 from https://files.pythonhosted.org/packages/27/6f/83ead0e2e30a90445ee4fc0135f43741aebc30cca5b43f20968b603e30b6/openapi_core-0.19.5-py3-none-any.whl.metadata
+  Using cached openapi_core-0.19.5-py3-none-any.whl.metadata (6.6 kB)
+Collecting openapi-pydantic>=0.5.1 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for openapi-pydantic>=0.5.1 from https://files.pythonhosted.org/packages/12/cf/03675d8bd8ecbf4445504d8071adab19f5f993676795708e36402ab38263/openapi_pydantic-0.5.1-py3-none-any.whl.metadata
+  Using cached openapi_pydantic-0.5.1-py3-none-any.whl.metadata (10 kB)
+Collecting pyperclip>=1.9.0 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for pyperclip>=1.9.0 from https://files.pythonhosted.org/packages/1e/bc/22540e73c5f5ae18f02924cd3954a6c9a4aa6b713c841a94c98335d333a1/pyperclip-1.10.0-py3-none-any.whl.metadata
+  Using cached pyperclip-1.10.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting rich>=13.9.4 (from fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for rich>=13.9.4 from https://files.pythonhosted.org/packages/e3/30/3c4d035596d3cf444529e0b2953ad0466f6049528a879d27534700580395/rich-14.1.0-py3-none-any.whl.metadata
+  Using cached rich-14.1.0-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: Werkzeug>=2.2.2 in /databricks/python3/lib/python3.11/site-packages (from Flask<4->mlflow) (2.2.3)
+Requirement already satisfied: Jinja2>=3.0 in /databricks/python3/lib/python3.11/site-packages (from Flask<4->mlflow) (3.1.2)
+Requirement already satisfied: itsdangerous>=2.0 in /databricks/python3/lib/python3.11/site-packages (from Flask<4->mlflow) (2.0.1)
+Collecting graphql-core<3.3,>=3.1 (from graphene<4->mlflow)
+  Obtaining dependency information for graphql-core<3.3,>=3.1 from https://files.pythonhosted.org/packages/ae/4f/7297663840621022bc73c22d7d9d80dbc78b4db6297f764b545cd5dd462d/graphql_core-3.2.6-py3-none-any.whl.metadata
+  Using cached graphql_core-3.2.6-py3-none-any.whl.metadata (11 kB)
+Collecting graphql-relay<3.3,>=3.1 (from graphene<4->mlflow)
+  Obtaining dependency information for graphql-relay<3.3,>=3.1 from https://files.pythonhosted.org/packages/74/16/a4cf06adbc711bd364a73ce043b0b08d8fa5aae3df11b6ee4248bcdad2e0/graphql_relay-3.2.0-py3-none-any.whl.metadata
+  Using cached graphql_relay-3.2.0-py3-none-any.whl.metadata (12 kB)
+Requirement already satisfied: python-dateutil<3,>=2.7.0 in /databricks/python3/lib/python3.11/site-packages (from graphene<4->mlflow) (2.8.2)
+Requirement already satisfied: setuptools>=3.0 in /databricks/python3/lib/python3.11/site-packages (from gunicorn<24->mlflow) (68.0.0)
+Requirement already satisfied: contourpy>=1.0.1 in /databricks/python3/lib/python3.11/site-packages (from matplotlib<4->mlflow) (1.0.5)
+Requirement already satisfied: cycler>=0.10 in /databricks/python3/lib/python3.11/site-packages (from matplotlib<4->mlflow) (0.11.0)
+Requirement already satisfied: fonttools>=4.22.0 in /databricks/python3/lib/python3.11/site-packages (from matplotlib<4->mlflow) (4.25.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /databricks/python3/lib/python3.11/site-packages (from matplotlib<4->mlflow) (1.4.4)
+Requirement already satisfied: pillow>=6.2.0 in /databricks/python3/lib/python3.11/site-packages (from matplotlib<4->mlflow) (9.4.0)
+Requirement already satisfied: pyparsing<3.1,>=2.3.1 in /databricks/python3/lib/python3.11/site-packages (from matplotlib<4->mlflow) (3.0.9)
+Requirement already satisfied: azure-storage-file-datalake>12 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (12.14.0)
+Requirement already satisfied: google-cloud-storage>=1.30.0 in /databricks/python3/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (2.10.0)
+Requirement already satisfied: databricks-agents<2.0,>=1.2.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from mlflow-skinny==3.4.0->mlflow) (1.6.0)
+Requirement already satisfied: pytz>=2020.1 in /databricks/python3/lib/python3.11/site-packages (from pandas<3->mlflow) (2022.7)
+Requirement already satisfied: joblib>=1.1.1 in /databricks/python3/lib/python3.11/site-packages (from scikit-learn<2->mlflow) (1.2.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /databricks/python3/lib/python3.11/site-packages (from scikit-learn<2->mlflow) (2.2.0)
+Requirement already satisfied: greenlet>=1 in /databricks/python3/lib/python3.11/site-packages (from sqlalchemy<3,>=1.4.0->mlflow) (2.0.1)
+Requirement already satisfied: six>=1.11.0 in /usr/lib/python3/dist-packages (from azure-core<2.0.0,>=1.23.0->azure-cosmos==4.3.1->databricks-feature-engineering) (1.16.0)
+Requirement already satisfied: azure-storage-blob<13.0.0,>=12.19.0 in /databricks/python3/lib/python3.11/site-packages (from azure-storage-file-datalake>12->mlflow-skinny==3.4.0->mlflow) (12.19.1)
+Requirement already satisfied: isodate>=0.6.1 in /databricks/python3/lib/python3.11/site-packages (from azure-storage-file-datalake>12->mlflow-skinny==3.4.0->mlflow) (0.6.1)
+Requirement already satisfied: pycparser in /databricks/python3/lib/python3.11/site-packages (from cffi>=1.14->cryptography<46,>=43.0.0->mlflow) (2.21)
+Requirement already satisfied: attrs>=23.1.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from cyclopts>=3.0.0->fastmcp<3,>=2.0.0->mlflow) (25.3.0)
+Collecting docstring-parser>=0.15 (from cyclopts>=3.0.0->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for docstring-parser>=0.15 from https://files.pythonhosted.org/packages/55/e2/2537ebcff11c1ee1ff17d8d0b6f4db75873e3b0fb32c2d4a2ee31ecb310a/docstring_parser-0.17.0-py3-none-any.whl.metadata
+  Using cached docstring_parser-0.17.0-py3-none-any.whl.metadata (3.5 kB)
+Collecting rich-rst<2.0.0,>=1.3.1 (from cyclopts>=3.0.0->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for rich-rst<2.0.0,>=1.3.1 from https://files.pythonhosted.org/packages/fd/bc/cc4e3dbc5e7992398dcb7a8eda0cbcf4fb792a0cdb93f857b478bf3cf884/rich_rst-1.3.1-py3-none-any.whl.metadata
+  Using cached rich_rst-1.3.1-py3-none-any.whl.metadata (6.0 kB)
+Requirement already satisfied: databricks-connect in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (16.1.6)
+Requirement already satisfied: dataclasses-json in /databricks/python3/lib/python3.11/site-packages (from databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.6.7)
+Requirement already satisfied: tenacity>=8.5 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (9.1.2)
+Requirement already satisfied: tiktoken>=0.8.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.11.0)
+Requirement already satisfied: tqdm in /databricks/python3/lib/python3.11/site-packages (from databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (4.65.0)
+Requirement already satisfied: whenever==0.7.3 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.7.3)
+Requirement already satisfied: litellm==1.75.9 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (1.75.9)
+Requirement already satisfied: aiohttp>=3.10 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (3.12.15)
+Requirement already satisfied: jsonschema<5.0.0,>=4.22.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (4.25.1)
+Requirement already satisfied: openai>=1.99.5 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (1.109.1)
+Requirement already satisfied: tokenizers in /databricks/python3/lib/python3.11/site-packages (from litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.19.0)
+Requirement already satisfied: starlette<0.49.0,>=0.40.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from fastapi<1->mlflow-skinny==3.4.0->mlflow) (0.48.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /databricks/python3/lib/python3.11/site-packages (from gitpython<4,>=3.1.9->mlflow-skinny==3.4.0->mlflow) (4.0.11)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /databricks/python3/lib/python3.11/site-packages (from google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (0.2.8)
+Requirement already satisfied: rsa<5,>=3.1.4 in /databricks/python3/lib/python3.11/site-packages (from google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (4.9)
+Requirement already satisfied: google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5 in /databricks/python3/lib/python3.11/site-packages (from google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow) (2.18.0)
+Requirement already satisfied: google-cloud-core<3.0dev,>=2.3.0 in /databricks/python3/lib/python3.11/site-packages (from google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow) (2.4.1)
+Requirement already satisfied: google-resumable-media>=2.3.2 in /databricks/python3/lib/python3.11/site-packages (from google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow) (2.7.1)
+Requirement already satisfied: anyio in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow) (4.11.0)
+Requirement already satisfied: certifi in /databricks/python3/lib/python3.11/site-packages (from httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow) (2023.7.22)
+Requirement already satisfied: httpcore==1.* in /databricks/python3/lib/python3.11/site-packages (from httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow) (1.0.5)
+Requirement already satisfied: idna in /databricks/python3/lib/python3.11/site-packages (from httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow) (3.4)
+Requirement already satisfied: h11<0.15,>=0.13 in /databricks/python3/lib/python3.11/site-packages (from httpcore==1.*->httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow) (0.14.0)
+Requirement already satisfied: zipp>=0.5 in /databricks/python3/lib/python3.11/site-packages (from importlib_metadata!=4.7.0,<9,>=3.7.0->mlflow-skinny==3.4.0->mlflow) (3.11.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /databricks/python3/lib/python3.11/site-packages (from Jinja2>=3.0->Flask<4->mlflow) (2.1.1)
+Collecting httpx-sse>=0.4 (from mcp<2.0.0,>=1.12.4->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for httpx-sse>=0.4 from https://files.pythonhosted.org/packages/25/0a/6269e3473b09aed2dab8aa1a600c70f31f00ae1349bee30658f7e358a159/httpx_sse-0.4.1-py3-none-any.whl.metadata
+  Using cached httpx_sse-0.4.1-py3-none-any.whl.metadata (9.4 kB)
+Collecting pydantic-settings>=2.5.2 (from mcp<2.0.0,>=1.12.4->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for pydantic-settings>=2.5.2 from https://files.pythonhosted.org/packages/83/d6/887a1ff844e64aa823fb4905978d882a633cfe295c32eacad582b78a7d8b/pydantic_settings-2.11.0-py3-none-any.whl.metadata
+  Using cached pydantic_settings-2.11.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting python-multipart>=0.0.9 (from mcp<2.0.0,>=1.12.4->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for python-multipart>=0.0.9 from https://files.pythonhosted.org/packages/45/58/38b5afbc1a800eeea951b9285d3912613f2603bdf897a4ab0f4bd7f405fc/python_multipart-0.0.20-py3-none-any.whl.metadata
+  Using cached python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
+Collecting sse-starlette>=1.6.1 (from mcp<2.0.0,>=1.12.4->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for sse-starlette>=1.6.1 from https://files.pythonhosted.org/packages/ef/10/c78f463b4ef22eef8491f218f692be838282cd65480f6e423d7730dfd1fb/sse_starlette-3.0.2-py3-none-any.whl.metadata
+  Using cached sse_starlette-3.0.2-py3-none-any.whl.metadata (11 kB)
+Collecting jsonschema-path<0.4.0,>=0.3.1 (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for jsonschema-path<0.4.0,>=0.3.1 from https://files.pythonhosted.org/packages/cb/58/3485da8cb93d2f393bce453adeef16896751f14ba3e2024bc21dc9597646/jsonschema_path-0.3.4-py3-none-any.whl.metadata
+  Using cached jsonschema_path-0.3.4-py3-none-any.whl.metadata (4.3 kB)
+Requirement already satisfied: more-itertools in /usr/lib/python3/dist-packages (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow) (8.10.0)
+Collecting openapi-schema-validator<0.7.0,>=0.6.0 (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for openapi-schema-validator<0.7.0,>=0.6.0 from https://files.pythonhosted.org/packages/21/c6/ad0fba32775ae749016829dace42ed80f4407b171da41313d1a3a5f102e4/openapi_schema_validator-0.6.3-py3-none-any.whl.metadata
+  Using cached openapi_schema_validator-0.6.3-py3-none-any.whl.metadata (5.4 kB)
+Collecting openapi-spec-validator<0.8.0,>=0.7.1 (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for openapi-spec-validator<0.8.0,>=0.7.1 from https://files.pythonhosted.org/packages/27/dd/b3fd642260cb17532f66cc1e8250f3507d1e580483e209dc1e9d13bd980d/openapi_spec_validator-0.7.2-py3-none-any.whl.metadata
+  Using cached openapi_spec_validator-0.7.2-py3-none-any.whl.metadata (5.7 kB)
+Collecting parse (from openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for parse from https://files.pythonhosted.org/packages/d0/31/ba45bf0b2aa7898d81cbbfac0e88c267befb59ad91a19e36e1bc5578ddb1/parse-1.20.2-py2.py3-none-any.whl.metadata
+  Using cached parse-1.20.2-py2.py3-none-any.whl.metadata (22 kB)
+Requirement already satisfied: deprecated>=1.2.6 in /databricks/python3/lib/python3.11/site-packages (from opentelemetry-api<3,>=1.9.0->mlflow-skinny==3.4.0->mlflow) (1.2.14)
+INFO: pip is looking at multiple versions of opentelemetry-proto to determine which version is compatible with other requirements. This could take a while.
+Collecting opentelemetry-proto<3,>=1.9.0 (from mlflow-skinny==3.4.0->mlflow)
+  Obtaining dependency information for opentelemetry-proto<3,>=1.9.0 from https://files.pythonhosted.org/packages/c4/25/f89ea66c59bd7687e218361826c969443c4fa15dfe89733f3bf1e2a9e971/opentelemetry_proto-1.37.0-py3-none-any.whl.metadata
+  Using cached opentelemetry_proto-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+Requirement already satisfied: opentelemetry-semantic-conventions==0.46b0 in /databricks/python3/lib/python3.11/site-packages (from opentelemetry-sdk<3,>=1.9.0->mlflow-skinny==3.4.0->mlflow) (0.46b0)
+Requirement already satisfied: annotated-types>=0.6.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from pydantic<3,>=1.10.8->mlflow-skinny==3.4.0->mlflow) (0.7.0)
+Requirement already satisfied: pydantic-core==2.33.2 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from pydantic<3,>=1.10.8->mlflow-skinny==3.4.0->mlflow) (2.33.2)
+Requirement already satisfied: typing-inspection>=0.4.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from pydantic<3,>=1.10.8->mlflow-skinny==3.4.0->mlflow) (0.4.1)
+Collecting email-validator>=2.0.0 (from pydantic<3,>=1.10.8->mlflow-skinny==3.4.0->mlflow)
+  Obtaining dependency information for email-validator>=2.0.0 from https://files.pythonhosted.org/packages/de/15/545e2b6cf2e3be84bc1ed85613edd75b8aea69807a71c26f4ca6a9258e82/email_validator-2.3.0-py3-none-any.whl.metadata
+  Using cached email_validator-2.3.0-py3-none-any.whl.metadata (26 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in /databricks/python3/lib/python3.11/site-packages (from requests<3,>=2.17.3->mlflow-skinny==3.4.0->mlflow) (2.0.4)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /databricks/python3/lib/python3.11/site-packages (from rich>=13.9.4->fastmcp<3,>=2.0.0->mlflow) (2.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /databricks/python3/lib/python3.11/site-packages (from rich>=13.9.4->fastmcp<3,>=2.0.0->mlflow) (2.15.1)
+Requirement already satisfied: backcall in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.2.0)
+Requirement already satisfied: decorator in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (5.1.1)
+Requirement already satisfied: jedi>=0.16 in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.18.1)
+Requirement already satisfied: matplotlib-inline in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.1.6)
+Requirement already satisfied: pickleshare in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.7.5)
+Requirement already satisfied: prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30 in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (3.0.36)
+Requirement already satisfied: stack-data in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.2.0)
+Requirement already satisfied: traitlets>=5 in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (5.7.1)
+Requirement already satisfied: pexpect>4.3 in /databricks/python3/lib/python3.11/site-packages (from ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (4.8.0)
+Requirement already satisfied: sniffio>=1.1 in /databricks/python3/lib/python3.11/site-packages (from anyio->httpx>=0.28.1->fastmcp<3,>=2.0.0->mlflow) (1.2.0)
+Requirement already satisfied: langchain-openai in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (0.3.33)
+Requirement already satisfied: wrapt<2,>=1.10 in /databricks/python3/lib/python3.11/site-packages (from deprecated>=1.2.6->opentelemetry-api<3,>=1.9.0->mlflow-skinny==3.4.0->mlflow) (1.14.1)
+Collecting dnspython>=2.0.0 (from email-validator>=2.0.0->pydantic<3,>=1.10.8->mlflow-skinny==3.4.0->mlflow)
+  Obtaining dependency information for dnspython>=2.0.0 from https://files.pythonhosted.org/packages/ba/5a/18ad964b0086c6e62e2e7500f7edc89e3faa45033c71c1893d34eed2b2de/dnspython-2.8.0-py3-none-any.whl.metadata
+  Using cached dnspython-2.8.0-py3-none-any.whl.metadata (5.7 kB)
+Requirement already satisfied: smmap<6,>=3.0.1 in /databricks/python3/lib/python3.11/site-packages (from gitdb<5,>=4.0.1->gitpython<4,>=3.1.9->mlflow-skinny==3.4.0->mlflow) (5.0.0)
+Requirement already satisfied: googleapis-common-protos<2.0.dev0,>=1.56.2 in /databricks/python3/lib/python3.11/site-packages (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5->google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow) (1.63.0)
+INFO: pip is looking at multiple versions of google-api-core to determine which version is compatible with other requirements. This could take a while.
+Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5 (from google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow)
+  Obtaining dependency information for google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5 from https://files.pythonhosted.org/packages/14/4b/ead00905132820b623732b175d66354e9d3e69fcf2a5dcdab780664e7896/google_api_core-2.25.1-py3-none-any.whl.metadata
+  Downloading google_api_core-2.25.1-py3-none-any.whl.metadata (3.0 kB)
+Requirement already satisfied: proto-plus<2.0.0,>=1.22.3 in /databricks/python3/lib/python3.11/site-packages (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5->google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow) (1.24.0)
+Requirement already satisfied: google-crc32c<2.0dev,>=1.0 in /databricks/python3/lib/python3.11/site-packages (from google-resumable-media>=2.3.2->google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow) (1.5.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /databricks/python3/lib/python3.11/site-packages (from jedi>=0.16->ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.8.3)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.22.0->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (2025.9.1)
+Requirement already satisfied: referencing>=0.28.4 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.22.0->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.36.2)
+Requirement already satisfied: rpds-py>=0.7.1 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from jsonschema<5.0.0,>=4.22.0->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.27.1)
+Collecting pathable<0.5.0,>=0.4.1 (from jsonschema-path<0.4.0,>=0.3.1->openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for pathable<0.5.0,>=0.4.1 from https://files.pythonhosted.org/packages/7d/eb/b6260b31b1a96386c0a880edebe26f89669098acea8e0318bff6adb378fd/pathable-0.4.4-py3-none-any.whl.metadata
+  Using cached pathable-0.4.4-py3-none-any.whl.metadata (1.8 kB)
+Requirement already satisfied: mdurl~=0.1 in /databricks/python3/lib/python3.11/site-packages (from markdown-it-py>=2.2.0->rich>=13.9.4->fastmcp<3,>=2.0.0->mlflow) (0.1.0)
+Collecting rfc3339-validator (from openapi-schema-validator<0.7.0,>=0.6.0->openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for rfc3339-validator from https://files.pythonhosted.org/packages/7b/44/4e421b96b67b2daff264473f7465db72fbdf36a07e05494f50300cc7b0c6/rfc3339_validator-0.1.4-py2.py3-none-any.whl.metadata
+  Using cached rfc3339_validator-0.1.4-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting lazy-object-proxy<2.0.0,>=1.7.1 (from openapi-spec-validator<0.8.0,>=0.7.1->openapi-core>=0.19.5->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for lazy-object-proxy<2.0.0,>=1.7.1 from https://files.pythonhosted.org/packages/3a/03/1bdc21d9a6df9ff72d70b2ff17d8609321bea4b0d3cffd2cea92fb2ef738/lazy_object_proxy-1.12.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata
+  Using cached lazy_object_proxy-1.12.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (5.1 kB)
+Requirement already satisfied: ptyprocess>=0.5 in /databricks/python3/lib/python3.11/site-packages (from pexpect>4.3->ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.7.0)
+Requirement already satisfied: wcwidth in /databricks/python3/lib/python3.11/site-packages (from prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30->ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.2.5)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /databricks/python3/lib/python3.11/site-packages (from pyasn1-modules>=0.2.1->google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (0.4.8)
+Collecting docutils (from rich-rst<2.0.0,>=1.3.1->cyclopts>=3.0.0->fastmcp<3,>=2.0.0->mlflow)
+  Obtaining dependency information for docutils from https://files.pythonhosted.org/packages/66/dd/f95350e853a4468ec37478414fc04ae2d61dad7a947b3015c3dcc51a09b9/docutils-0.22.2-py3-none-any.whl.metadata
+  Using cached docutils-0.22.2-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: regex>=2022.1.18 in /databricks/python3/lib/python3.11/site-packages (from tiktoken>=0.8.0->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (2022.7.9)
+Requirement already satisfied: grpcio-status>=1.59.3 in /databricks/python3/lib/python3.11/site-packages (from databricks-connect->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (1.60.0)
+Requirement already satisfied: grpcio>=1.59.3 in /databricks/python3/lib/python3.11/site-packages (from databricks-connect->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (1.60.0)
+Requirement already satisfied: py4j==0.10.9.7 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from databricks-connect->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.10.9.7)
+Requirement already satisfied: marshmallow<4.0.0,>=3.18.0 in /databricks/python3/lib/python3.11/site-packages (from dataclasses-json->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (3.21.2)
+Requirement already satisfied: typing-inspect<1,>=0.4.0 in /databricks/python3/lib/python3.11/site-packages (from dataclasses-json->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.9.0)
+Requirement already satisfied: executing in /databricks/python3/lib/python3.11/site-packages (from stack-data->ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.8.3)
+Requirement already satisfied: asttokens in /databricks/python3/lib/python3.11/site-packages (from stack-data->ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (2.0.5)
+Requirement already satisfied: pure-eval in /databricks/python3/lib/python3.11/site-packages (from stack-data->ipython->dbl-tempo<1,>=0.1.26->databricks-feature-engineering) (0.2.2)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from aiohttp>=3.10->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from aiohttp>=3.10->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (1.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /databricks/python3/lib/python3.11/site-packages (from aiohttp>=3.10->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (1.3.3)
+Requirement already satisfied: multidict<7.0,>=4.5 in /databricks/python3/lib/python3.11/site-packages (from aiohttp>=3.10->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (6.0.2)
+Requirement already satisfied: propcache>=0.2.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from aiohttp>=3.10->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.3.2)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from aiohttp>=3.10->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (1.20.1)
+INFO: pip is looking at multiple versions of googleapis-common-protos to determine which version is compatible with other requirements. This could take a while.
+Collecting googleapis-common-protos<2.0.0,>=1.56.2 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5->google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow)
+  Obtaining dependency information for googleapis-common-protos<2.0.0,>=1.56.2 from https://files.pythonhosted.org/packages/86/f1/62a193f0227cf15a920390abe675f386dec35f7ae3ffe6da582d3ade42c7/googleapis_common_protos-1.70.0-py3-none-any.whl.metadata
+  Downloading googleapis_common_protos-1.70.0-py3-none-any.whl.metadata (9.3 kB)
+Requirement already satisfied: distro<2,>=1.7.0 in /usr/lib/python3/dist-packages (from openai>=1.99.5->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (1.7.0)
+Requirement already satisfied: jiter<1,>=0.4.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from openai>=1.99.5->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.11.0)
+INFO: pip is looking at multiple versions of proto-plus to determine which version is compatible with other requirements. This could take a while.
+Collecting proto-plus<2.0.0,>=1.22.3 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5->google-cloud-storage>=1.30.0->mlflow-skinny==3.4.0->mlflow)
+  Obtaining dependency information for proto-plus<2.0.0,>=1.22.3 from https://files.pythonhosted.org/packages/4e/6d/280c4c2ce28b1593a19ad5239c8b826871fc6ec275c21afc8e1820108039/proto_plus-1.26.1-py3-none-any.whl.metadata
+  Downloading proto_plus-1.26.1-py3-none-any.whl.metadata (2.2 kB)
+Requirement already satisfied: mypy-extensions>=0.3.0 in /databricks/python3/lib/python3.11/site-packages (from typing-inspect<1,>=0.4.0->dataclasses-json->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.4.3)
+Requirement already satisfied: langchain-core<1.0.0,>=0.3.76 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from langchain-openai->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (0.3.76)
+Requirement already satisfied: huggingface-hub<1.0,>=0.16.4 in /databricks/python3/lib/python3.11/site-packages (from tokenizers->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (0.27.1)
+Requirement already satisfied: filelock in /databricks/python3/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (3.13.4)
+Requirement already satisfied: fsspec>=2023.5.0 in /databricks/python3/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers->litellm==1.75.9->databricks-agents<2.0,>=1.2.0->mlflow-skinny==3.4.0->mlflow) (2023.5.0)
+Requirement already satisfied: langsmith>=0.3.45 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from langchain-core<1.0.0,>=0.3.76->langchain-openai->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (0.4.31)
+Requirement already satisfied: jsonpatch<2.0,>=1.33 in /databricks/python3/lib/python3.11/site-packages (from langchain-core<1.0.0,>=0.3.76->langchain-openai->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (1.33)
+Requirement already satisfied: jsonpointer>=1.9 in /databricks/python3/lib/python3.11/site-packages (from jsonpatch<2.0,>=1.33->langchain-core<1.0.0,>=0.3.76->langchain-openai->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (3.0.0)
+Requirement already satisfied: orjson>=3.9.14 in /databricks/python3/lib/python3.11/site-packages (from langsmith>=0.3.45->langchain-core<1.0.0,>=0.3.76->langchain-openai->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (3.10.6)
+Requirement already satisfied: requests-toolbelt>=1.0.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from langsmith>=0.3.45->langchain-core<1.0.0,>=0.3.76->langchain-openai->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (1.0.0)
+Requirement already satisfied: zstandard>=0.23.0 in /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc/lib/python3.11/site-packages (from langsmith>=0.3.45->langchain-core<1.0.0,>=0.3.76->langchain-openai->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.4.0->mlflow) (0.25.0)
+Using cached mlflow-3.4.0-py3-none-any.whl (26.7 MB)
+Using cached mlflow_tracing-3.4.0-py3-none-any.whl (1.2 MB)
+Downloading databricks_feature_engineering-0.13.0-py3-none-any.whl (305 kB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/305.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m305.5/305.5 kB[0m [31m10.4 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached alembic-1.16.5-py3-none-any.whl (247 kB)
+Using cached cryptography-45.0.7-cp311-abi3-manylinux_2_34_x86_64.whl (4.5 MB)
+Using cached docker-7.1.0-py3-none-any.whl (147 kB)
+Using cached fastmcp-2.12.3-py3-none-any.whl (314 kB)
+Using cached graphene-3.4.3-py2.py3-none-any.whl (114 kB)
+Using cached protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl (322 kB)
+Downloading sqlalchemy-2.0.43-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.3 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━[0m[91m╸[0m[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.6/3.3 MB[0m [31m19.0 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.4/3.3 MB[0m [31m20.5 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━[0m [32m2.3/3.3 MB[0m [31m22.7 MB/s[0m eta [36m0:00:01[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m3.3/3.3 MB[0m [31m24.5 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.3/3.3 MB[0m [31m22.5 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached authlib-1.6.4-py2.py3-none-any.whl (243 kB)
+Using cached cyclopts-3.24.0-py3-none-any.whl (86 kB)
+Using cached exceptiongroup-1.3.0-py3-none-any.whl (16 kB)
+Using cached graphql_core-3.2.6-py3-none-any.whl (203 kB)
+Using cached graphql_relay-3.2.0-py3-none-any.whl (16 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Downloading mcp-1.15.0-py3-none-any.whl (166 kB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/167.0 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m167.0/167.0 kB[0m [31m23.8 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached openapi_core-0.19.5-py3-none-any.whl (106 kB)
+Using cached openapi_pydantic-0.5.1-py3-none-any.whl (96 kB)
+Using cached opentelemetry_proto-1.37.0-py3-none-any.whl (72 kB)
+Using cached pyperclip-1.10.0-py3-none-any.whl (11 kB)
+Using cached rich-14.1.0-py3-none-any.whl (243 kB)
+Using cached docstring_parser-0.17.0-py3-none-any.whl (36 kB)
+Using cached email_validator-2.3.0-py3-none-any.whl (35 kB)
+Downloading google_api_core-2.25.1-py3-none-any.whl (160 kB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/160.8 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m160.8/160.8 kB[0m [31m27.1 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached httpx_sse-0.4.1-py3-none-any.whl (8.1 kB)
+Using cached jsonschema_path-0.3.4-py3-none-any.whl (14 kB)
+Using cached openapi_schema_validator-0.6.3-py3-none-any.whl (8.8 kB)
+Using cached openapi_spec_validator-0.7.2-py3-none-any.whl (39 kB)
+Using cached pydantic_settings-2.11.0-py3-none-any.whl (48 kB)
+Using cached python_multipart-0.0.20-py3-none-any.whl (24 kB)
+Using cached rich_rst-1.3.1-py3-none-any.whl (11 kB)
+Using cached sse_starlette-3.0.2-py3-none-any.whl (11 kB)
+Using cached parse-1.20.2-py2.py3-none-any.whl (20 kB)
+Using cached dnspython-2.8.0-py3-none-any.whl (331 kB)
+Downloading googleapis_common_protos-1.70.0-py3-none-any.whl (294 kB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/294.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m294.5/294.5 kB[0m [31m21.9 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached lazy_object_proxy-1.12.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (68 kB)
+Using cached pathable-0.4.4-py3-none-any.whl (9.6 kB)
+Downloading proto_plus-1.26.1-py3-none-any.whl (50 kB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/50.2 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m50.2/50.2 kB[0m [31m8.1 MB/s[0m eta [36m0:00:00[0m
+[?25hUsing cached docutils-0.22.2-py3-none-any.whl (632 kB)
+Using cached rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+Installing collected packages: pyperclip, parse, sqlalchemy, rfc3339-validator, python-multipart, protobuf, pathable, lazy-object-proxy, httpx-sse, graphql-core, exceptiongroup, docutils, docstring-parser, dnspython, sse-starlette, rich, proto-plus, opentelemetry-proto, jsonschema-path, httpx, graphql-relay, googleapis-common-protos, email-validator, docker, cryptography, alembic, rich-rst, pydantic-settings, openapi-pydantic, graphene, google-api-core, authlib, openapi-schema-validator, mcp, cyclopts, openapi-spec-validator, mlflow-tracing, openapi-core, fastmcp, mlflow, databricks-feature-engineering
+  Attempting uninstall: sqlalchemy
+    Found existing installation: SQLAlchemy 1.4.39
+    Not uninstalling sqlalchemy at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'SQLAlchemy'. No files were found to uninstall.
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 4.24.1
+    Not uninstalling protobuf at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'protobuf'. No files were found to uninstall.
+  Attempting uninstall: rich
+    Found existing installation: rich 13.7.1
+    Not uninstalling rich at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'rich'. No files were found to uninstall.
+  Attempting uninstall: proto-plus
+    Found existing installation: proto-plus 1.24.0
+    Not uninstalling proto-plus at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'proto-plus'. No files were found to uninstall.
+  Attempting uninstall: opentelemetry-proto
+    Found existing installation: opentelemetry-proto 1.27.0
+    Uninstalling opentelemetry-proto-1.27.0:
+      Successfully uninstalled opentelemetry-proto-1.27.0
+  Attempting uninstall: httpx
+    Found existing installation: httpx 0.27.0
+    Not uninstalling httpx at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'httpx'. No files were found to uninstall.
+  Attempting uninstall: googleapis-common-protos
+    Found existing installation: googleapis-common-protos 1.63.0
+    Not uninstalling googleapis-common-protos at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'googleapis-common-protos'. No files were found to uninstall.
+  Attempting uninstall: cryptography
+    Found existing installation: cryptography 41.0.3
+    Not uninstalling cryptography at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'cryptography'. No files were found to uninstall.
+  Attempting uninstall: google-api-core
+    Found existing installation: google-api-core 2.18.0
+    Not uninstalling google-api-core at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'google-api-core'. No files were found to uninstall.
+  Attempting uninstall: databricks-feature-engineering
+    Found existing installation: databricks-feature-engineering 0.8.0
+    Not uninstalling databricks-feature-engineering at /databricks/python3/lib/python3.11/site-packages, outside environment /local_disk0/.ephemeral_nfs/envs/pythonEnv-5454e024-7a7d-4a66-b0d0-09ed8281fcbc
+    Can't uninstall 'databricks-feature-engineering'. No files were found to uninstall.
+Successfully installed alembic-1.16.5 authlib-1.6.4 cryptography-45.0.7 cyclopts-3.24.0 databricks-feature-engineering-0.13.0 dnspython-2.8.0 docker-7.1.0 docstring-parser-0.17.0 docutils-0.22.2 email-validator-2.3.0 exceptiongroup-1.3.0 fastmcp-2.12.3 google-api-core-2.25.1 googleapis-common-protos-1.70.0 graphene-3.4.3 graphql-core-3.2.6 graphql-relay-3.2.0 httpx-0.28.1 httpx-sse-0.4.1 jsonschema-path-0.3.4 lazy-object-proxy-1.12.0 mcp-1.15.0 mlflow-3.4.0 mlflow-tracing-3.4.0 openapi-core-0.19.5 openapi-pydantic-0.5.1 openapi-schema-validator-0.6.3 openapi-spec-validator-0.7.2 opentelemetry-proto-1.37.0 parse-1.20.2 pathable-0.4.4 proto-plus-1.26.1 protobuf-6.32.1 pydantic-settings-2.11.0 pyperclip-1.10.0 python-multipart-0.0.20 rfc3339-validator-0.1.4 rich-14.1.0 rich-rst-1.3.1 sqlalchemy-2.0.43 sse-starlette-3.0.2
